@@ -89,12 +89,12 @@ public class SecurityConfig {
 	UserDetailsService userDetailsService() {
 		UserDetails userDetails = User.builder()
 				.username("mario")
-				.password("{nopp}12345")
+				.password("{noop}12345")
 				.roles("USER")
 				.build();
         UserDetails admin = User.builder()
 				.username("admin")
-				.password("{nopp}12345")
+				.password("{noop}12345")
 				.roles("USER","ADMIN")
 				.build();
 
